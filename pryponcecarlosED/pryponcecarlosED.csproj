@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{97A61DA9-C274-40FE-8920-6F533099C278}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>pryponcecarlosED</RootNamespace>
+    <AssemblyName>pryponcecarlosED</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clsarbolbinario.cs" />
+    <Compile Include="Clsbasededatos.cs" />
+    <Compile Include="ClsCola.cs" />
+    <Compile Include="Clslistadoble.cs" />
+    <Compile Include="Clslistasimple.cs" />
+    <Compile Include="Clsnodo.cs" />
+    <Compile Include="ClsPIla.cs" />
+    <Compile Include="Frmconsultabasededatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmconsultabasededatos.Designer.cs">
+      <DependentUpon>Frmconsultabasededatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmarbolbinario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmarbolbinario.Designer.cs">
+      <DependentUpon>Frmarbolbinario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBASEDEDATOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBASEDEDATOS.Designer.cs">
+      <DependentUpon>FrmBASEDEDATOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCola.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCola.Designer.cs">
+      <DependentUpon>FrmCola.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmdatosdeldesarrolador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmdatosdeldesarrolador.Designer.cs">
+      <DependentUpon>Frmdatosdeldesarrolador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmlistadoble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmlistadoble.Designer.cs">
+      <DependentUpon>Frmlistadoble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmlistasimple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmlistasimple.Designer.cs">
+      <DependentUpon>Frmlistasimple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmmain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmmain.Designer.cs">
+      <DependentUpon>Frmmain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmpila.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmpila.Designer.cs">
+      <DependentUpon>Frmpila.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frmconsultabasededatos.resx">
+      <DependentUpon>Frmconsultabasededatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmarbolbinario.resx">
+      <DependentUpon>Frmarbolbinario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBASEDEDATOS.resx">
+      <DependentUpon>FrmBASEDEDATOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCola.resx">
+      <DependentUpon>FrmCola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmdatosdeldesarrolador.resx">
+      <DependentUpon>Frmdatosdeldesarrolador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmlistadoble.resx">
+      <DependentUpon>Frmlistadoble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmlistasimple.resx">
+      <DependentUpon>Frmlistasimple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmmain.resx">
+      <DependentUpon>Frmmain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmpila.resx">
+      <DependentUpon>Frmpila.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
